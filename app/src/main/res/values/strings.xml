@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FollowTheRecipe</string>
+    <string name="recipe_title_hint">
+        Enter a title for the recipe.
+    </string>
+    <string name="recipe_title_label">
+        Title
+    </string>
+    <string name="recipe_ingredients_label">
+        Ingredients
+    </string>
+    <string name="recipe_directions_label">
+        Directions
+    </string>
+    <string name="new_recipe">
+        New Recipe
+    </string>
+    <string name="delete_recipe">
+        Delete Recipe
+    </string>
+    <string name="app_long_name">
+        Follow The Recipe
+    </string>
+</resources>

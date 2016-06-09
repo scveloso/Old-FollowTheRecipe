@@ -33,7 +33,7 @@ public class RecipePagerActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_pager);
-
+        setTitle(R.string.app_long_name);
         UUID recipeId = (UUID) getIntent()
                 .getSerializableExtra(EXTRA_RECIPE_ID);
 

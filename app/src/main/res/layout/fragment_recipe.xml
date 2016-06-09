@@ -36,5 +36,4 @@ Each line is counted as one ingredient."/>
         android:layout_marginRight="8dp"
         android:hint="Enter the directions.
 Each line is counted as one direction."/>
-
 </LinearLayout>

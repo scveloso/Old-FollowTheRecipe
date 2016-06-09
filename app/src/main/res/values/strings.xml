@@ -21,4 +21,7 @@
     <string name="app_long_name">
         Follow The Recipe
     </string>
+    <string name="launcher_name">
+        FTR
+    </string>
 </resources>

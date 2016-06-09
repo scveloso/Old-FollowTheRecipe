@@ -3,4 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="deep_green">
+        #0F1B07
+    </color>
+
+    <color name="plants">
+        #5C821A
+    </color>
+
+    <color name="new_growth">
+        #C6D166
+    </color>
+    <color name="white">
+        #FFFFFF
+    </color>
 </resources>

@@ -19,7 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:hint="Enter the recipe's ingredients.."/>
+        android:hint="Enter the ingredients.
+Each line is counted as one ingredient."/>
 
     <TextView
         android:text="@string/recipe_directions_label"
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:hint="Enter directions for the recipe."/>
+        android:hint="Enter the directions.
+Each line is counted as one direction."/>
 
 </LinearLayout>

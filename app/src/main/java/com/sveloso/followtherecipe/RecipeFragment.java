@@ -23,6 +23,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
 import java.io.File;
 import java.util.UUID;
@@ -148,6 +149,9 @@ public class RecipeFragment extends Fragment{
         mPhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(),
+                        "Rotate phone 90 degrees to the left when taking photo!", Toast.LENGTH_SHORT)
+                        .show();
                 startActivityForResult(captureImage, REQUEST_PHOTO);
             }
         });
@@ -184,9 +188,15 @@ public class RecipeFragment extends Fragment{
             return;
         }
 
-        if (requestCode == REQUEST_PHOTO) {
+        else if (requestCode == REQUEST_PHOTO) {
             updatePhoto();
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updatePhoto();
     }
 
     private void updatePhoto() {

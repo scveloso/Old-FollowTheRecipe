@@ -6,7 +6,10 @@ package utility;
 public class StringUtils {
 
     public static int countLines(String str){
-        String[] lines = str.split("\r\n|\r|\n");
-        return lines.length;
+        if (str != null) {
+            String[] lines = str.split("\r\n|\r|\n");
+            return lines.length;
+        }
+        return 0;
     }
 }

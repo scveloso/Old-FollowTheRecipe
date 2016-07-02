@@ -95,16 +95,12 @@ public class RecipeListFragment extends Fragment{
         private TextView mTitleTextView;
         private ImageView mPhotoView;
         private File mPhotoFile;
-        private TextView mIngredientsNumTextView;
-        private TextView mDirectionsNumTextView;
 
         public RecipeHolder (View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
 
             mTitleTextView = (TextView) itemView.findViewById(R.id.list_item_recipe_title_text_view);
-            mIngredientsNumTextView = (TextView) itemView.findViewById(R.id.list_item_recipe_number_ingredients_text_view);
-            mDirectionsNumTextView = (TextView) itemView.findViewById(R.id.list_item_recipe_number_directions_text_view);
             mPhotoView = (ImageView) itemView.findViewById(R.id.list_item_recipe_image_view);
         }
 
@@ -114,11 +110,6 @@ public class RecipeListFragment extends Fragment{
             mPhotoFile = RecipeManager.get(getActivity()).getPhotoFile(mRecipe);
 
             mTitleTextView.setText(mRecipe.getTitle());
-
-            int numIngredients = StringUtils.countLines(mRecipe.getIngredients());
-            int numDirections = StringUtils.countLines(mRecipe.getDirections());
-            mIngredientsNumTextView.setText("Number of ingredients: " + numIngredients);
-            mDirectionsNumTextView.setText("Number of steps: " + numDirections);
 
             updatePhoto();
         }

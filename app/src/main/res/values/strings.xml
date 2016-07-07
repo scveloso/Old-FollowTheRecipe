@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FollowTheRecipe</string>
+    <string name="app_name">Follow The Recipe</string>
     <string name="recipe_title_hint">
         Enter a title for the recipe.
     </string>
